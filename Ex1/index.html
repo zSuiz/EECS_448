@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir = "ltr">
+    <head>
+      
+        <link href="background.css" rel="stylesheet"/>
+        <meta charset="urt-8">
+        <title>Security check</title>
+    </head>
+    <body>
+
+        <p>Please enter your password (at least 8 characters)</p> 
+        Password: 
+        &emsp;
+        &emsp;
+        &emsp;
+        &emsp;
+        <input type="password" id="Input">
+        <span id="passwordBox"></span>
+        <br>
+        <br>
+        Verify your password : 
+        <input type="password" id="validate">
+        <span id="VerifyPass"></span>  
+        <br>
+        <br>
+        <button type="submit" onclick="checkPassFunc()">Validate</button>   
+        <script src="password.js"></script>
+        <script>
+            function checkPassFunc()
+            {
+                var pass = document.getElementById("Input").value;
+                //document.querySelector("#passwordBox").innerText=pass;
+                var checkpass = document.getElementById("validate").value;
+                //document.querySelector("#VerifyPass").innerText=checkpass;
+               
+                // if (pass == true && checkpass == false)
+                //     {
+                //         alert('Please enter your password in the "Verify Password" box.')
+
+
+                        if(pass.length < 8 || checkpass.length < 8)
+                        {                
+                            alert("ERROR, Please enter at least 8 characters or more.");
+                            {
+                                    if(pass != checkpass)
+                                    {
+                                        alert("ERROR, Your password can't validate because either no match or too short.")
+                                    }
+                            }
+                        }
+                        else if (pass.length < 8 || checkpass.length < 8)
+                        {
+                            alert("ERROR, Password needs to be at least 8 characters or more.")
+                        }
+                        else if (pass != checkpass)
+                        {
+                            alert("Password does not match")
+                        }
+                        else
+                        {
+                            alert ("Password is match.")
+                        }
+                    
+                    
+            }
+        
+        </script>
+    </body>
+</html>
