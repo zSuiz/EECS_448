@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Exercise 4</title>
+    <script type "text" src = "ex4.js"></script>
+    <link href = "mystyle.css" rel = "stylesheet">
+  </head>
+
+  <body>
+    <div align= "center">
+    <h2>Background</h2>
+    <h3>Please enter one number from 0 to 255 in each box</h3>
+
+    Red, Blue & Green : <input type = "number" id = "R_BG">
+                        <input type = "number" id = "G_BG">
+                        <input type = "number" id = "B_BG">
+    <br>
+    <h2>Border</h2>
+    <h3>Please enter one number from 0 to 255 in each box</h3>
+
+    Red, Blue & Green : <input type = "number" id = "makeRedborder">
+                        <input type = "number" id = "makeGreenborder">
+                        <input type = "number" id = "makeBlueborder">
+    <br>
+    <h2>Width</h2>
+    <h3>Please enter one number in the box. (recommend from 0 to 255)</h3>
+    Pick your Width: <input type = "number" id = "ControlBorder">
+    <br>
+    <br>
+    <button type = "button" onclick = "MyFunction()"> Apply Color</button>
+    <br>
+
+    <p id = "WritingNoneSense" >THIS IS A TEST.
+                                          THIS IS JUST A TEST.
+                                                THIS IS A USELESS SENTENCE.</p>
+    </div>
+
+    <script>
+       function MyFunction()
+{
+    var someTag = document.getElementById("WritingNoneSense");
+
+
+    someTag.style.backgroundColor = `rgb(${document.getElementById("R_BG").value},
+                                      ${document.getElementById("G_BG").value},
+                                      ${document.getElementById("B_BG").value})`;
+
+    someTag.style.borderColor = `rgb(${document.getElementById("makeRedborder").value},
+                                      ${document.getElementById("makeGreenborder").value},
+                                      ${document.getElementById("makeBlueborder").value})`;
+
+    someTag.style.borderWidth = document.getElementById("ControlBorder").value;
+}
+    </script>
+
+  </body>
+</html>

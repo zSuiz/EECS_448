@@ -1,0 +1,14 @@
+
+
+
+body
+{
+  background: lightblue;
+}
+p
+{
+  color: rgb(8, 7, 7);
+  border-style: solid;
+  border-color: rgb(116, 167, 40);
+  background-color: white;
+}
