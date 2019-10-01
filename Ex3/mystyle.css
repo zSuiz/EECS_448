@@ -1,0 +1,58 @@
+body
+{    
+    background-image: url('rain.gif');
+    background-size:100%;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+
+p
+{
+    background-color: rgb(119, 204, 238);
+    color: black;
+    font-family: arial;
+    font-size: 20pt;
+}
+
+
+a
+{
+    color: rgb(255, 71, 47);
+}
+
+a:hover
+{
+    color: rgb(76, 0, 255);
+}
+
+a.link2
+{
+    color: rgb(82, 255, 47);
+}
+
+a.link2:hover
+{
+    color: rgba(229, 255, 0, 0.692);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.MyBio
+{
+    color: Black;
+    background-color: rgb(192, 178, 178);
+
+}
+p.TextClip
+{
+    color: rgb(247, 247, 247);
+    background-color: black;
+}
+
+
