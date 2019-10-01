@@ -1,0 +1,67 @@
+body
+{
+  background-color:lightskyblue;
+  background-size: 39%;  
+  background-repeat: repeat;
+  background-image: url("1.JPG");
+}
+a.ex1
+{
+  color: rgb(255, 0, 255);
+
+}
+
+a.ex2
+{
+  color: rgb(5, 19, 5);
+
+}
+
+a.ex3
+{
+  color: red;
+
+}
+
+a.ex4
+{
+  color: yellow;
+
+}
+
+a.ex5
+{
+  color: rgb(183, 0, 255);
+
+}
+
+a.ex1:hover
+{
+  color: blue;
+
+}
+
+a.ex2:hover
+{
+  color: blue;
+
+}
+
+a.ex3:hover
+{
+  color: blue;
+
+}
+
+a.ex4:hover
+{
+  color: blue;
+
+}
+
+
+a.ex5:hover
+{
+  color: blue;
+
+}
